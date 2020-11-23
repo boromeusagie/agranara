@@ -1,0 +1,22 @@
+.button {
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px 20px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+}
+
+.button-white {
+    color: #cccccc;
+    border-color: #cccccc;
+    background: transparent;
+    transition: .2s all ease-in;
+
+    &:hover {
+        background: #cccccc;
+        color: #282828;
+    }
+}

@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    &,
+    * {
+        cursor: none;        
+    }
+}
+
+body {
+    color: #cccccc;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    $size: 8px;
+    width: $size;
+    height: $size;
+    background-color: #d16241;
+    z-index: 99999;
+}
+
+.cursor-dot-outline {
+    $size: 10px;
+    width: $size;
+    height: $size;
+    background-color: rgba(#d16241, 0.5);
+    z-index: 99999;
+}
+
+.center {
+    text-align: center;
+}
